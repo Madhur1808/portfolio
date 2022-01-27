@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #555;
+  line-height: 1;
+}
+
+/* ***************** */
+/* GENERAL SEC */
+/* ***************** */
+
+#m {
+  color: #cf711f;
+  font-weight: 500;
+}
+
+.heading-primary {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+.btn-full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+}
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* ***************** */
+/* HRADER SECTION */
+/* ***************** */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  height: 5rem;
+  padding: 0 3rem;
+}
+.logo {
+  height: 1.5rem;
+  text-decoration: none;
+  color: #555;
+}
+/* ***************** */
+/*  NAVIGATION */
+/* ***************** */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+
+  height: 4rem;
+  /* padding-left: 0;
+    padding-bottom: 0; */
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.093);
+}
+.sticky .section-hero {
+  margin-top: 4rem;
+}
+
+.highlighted {
+  border: 1px solid black;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-link:link,
+.nav-list:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+
+  font-weight: 500;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+}
+a.nav-link {
+  color: #555;
+}
+.nav-link:hover,
+.nav-link:active {
+  display: inline-block;
+
+  color: #cf711f;
+}
+
+.nav-link.nav-spe:link,
+.nav-link.nav-spe:visited {
+  display: inline-block;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #e67e22;
+}
+
+.nav-link.nav-spe:hover,
+.nav-link.nav-spe:active {
+  background-color: #cf711f;
+}
+a#focus:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgba(230, 125, 34, 0.5);
+}
+/* MOBILE-NAVIGATIO */
+.mob-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.fa-bars,
+.fa-times {
+  font-size: 2rem;
+}
+
+.fa-times {
+  display: none;
+}
+.icon-mob-nav {
+  height: 4rem;
+  width: 4rem;
+  color: #333;
+}
+/* ***************** */
+/* HERO SECTION */
+/* ***************** */
+
+.section-hero {
+  background-color: #fdf2e9;
+  /* padding: 3rem 0; */
+  height: 100vh;
+}
+.hero {
+  max-width: 80rem; /*see here */
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.heading-primary {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.hero-img {
+  width: 80%;
+}
+
+/* ********** */
+/* HOBBIES */
+/* ************ */
+.hobbies {
+  height: 100vh;
+}
+.hobbies-inner {
+  text-align: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.secondary-heading {
+  padding: 6rem 0 4rem 0;
+}
+
+.cards {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.fa-laptop-code,
+.fa-book-reader,
+.fa-hamburger,
+.fa-music {
+  font-size: 5rem;
+}
+.secondary-heading h1 {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  text-align: left;
+  color: #333;
+}
+
+.icons {
+  background-color: #fdf2e9;
+  border: 2px solid #fdf2e9;
+  box-shadow: 1px 1px 10px #e67e22;
+  padding: 2rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.icon-links:link,
+.icon-links:visited {
+  color: #e67e22;
+  transition: all 0.4s;
+}
+.icon-links:hover,
+.icon-links:active {
+  color: #cf711f;
+  /* background-color: #e67e22; */
+}
+.btn-hobby {
+  display: inline-block;
+  margin-top: 10rem;
+  font-weight: 400;
+}
+/***************/
+/* skill section */
+
+.skills {
+  height: 100vh;
+}
+.skill {
+  display: flex;
+
+  justify-content: space-between;
+
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 32px;
+  padding-top: 6rem;
+}
+
+.heading a {
+  text-align: center;
+}
+.about-skill {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 3rem;
+}
+.about-skill a {
+  margin-top: 10rem;
+}
+.about-skill p {
+  max-width: 70%;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.btn-skills:link,
+.btn-skills:visited {
+  background-color: #fdf2e9;
+  color: #e67e22;
+  margin-right: 1.5rem;
+  transition: all 0.3s;
+  font-weight: 400;
+}
+.btn-skills:hover,
+.btn-skills:active {
+  background-color: white;
+  box-shadow: inset 0 0 0 3px #e67e22;
+}
+
+.left-progress {
+  background-color: #fdf2e9;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.head-title h2 {
+  color: #333;
+  font-size: 2rem;
+}
+
+.title h2 {
+  padding-bottom: 3px;
+  font-weight: 500;
+}
+.progress {
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 30px;
+  height: 16px;
+  width: 550px;
+}
+
+.bar {
+  background-color: #e67e22;
+
+  box-shadow: 0 3px 3px -5px #e67e22, 0 2px 5px #e67e22;
+
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0px;
+  opacity: 0;
+  transition: 1s ease 0.2s;
+}
+.footer {
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-border {
+  padding: 2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  border-top: 3px solid #fdf2e9;
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 14px;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .btn-hobby {
+    margin-top: 8rem;
+  }
+
+  .about-skill a {
+    margin-top: 6rem;
+  }
+
+  .skill {
+    padding: 0 24px;
+    padding-top: 5rem;
+  }
+  .progress {
+    width: 500px;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+  .progress {
+    width: 400px;
+  }
+
+  /* MOBILE-NAVIGATION */
+  .mob-nav {
+    display: block;
+    z-index: 1;
+  }
+  .nav {
+    background-color: rgba(255, 255, 255, 0.849);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .nav-open .fa-times {
+    display: block;
+  }
+  .nav-open .fa-bars {
+    display: none;
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .nav-link:link,
+  .nav-list:visited {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 672px) {
+  html {
+    font-size: 12px;
+  }
+
+  .btn-skill {
+    margin-right: 1rem;
+  }
+  .progress {
+    width: 350px;
+  }
+}
+
+@media (max-width: 567px) {
+  html {
+    font-size: 10px;
+  }
+  .hero-description {
+    margin-bottom: 2rem;
+  }
+
+  .btn-skill {
+    margin-right: 1rem;
+  }
+  .progress {
+    width: 300px;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 10px;
+  }
+  .section-hero {
+    padding-top: 2rem;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .hero-description {
+    margin-bottom: 2rem;
+  }
+  .hero-img {
+    width: 75%;
+  }
+
+  .card-container {
+    display: inline-block;
+  }
+
+  .icons {
+    box-shadow: 1px 1px 1px;
+    border-radius: 0;
+  }
+  .secondary-heading {
+    padding: 4rem 0 2rem 0;
+  }
+  .skill {
+    display: inline-block;
+    padding-top: 0;
+  }
+  .about-skill a {
+    margin-top: 1rem;
+  }
+  .about-skill p {
+    max-width: 100%;
+    line-height: 1.5;
+  }
+  .btn-skill {
+    margin-right: 1rem;
+  }
+  .left-progress {
+    margin-top: 1rem;
+  }
+  .progress {
+    width: 300px;
+
+    height: 10px;
+  }
+  .footer {
+    margin-top: 1rem;
+  }
+  .footer-border {
+    padding: 1rem;
+  }
+}

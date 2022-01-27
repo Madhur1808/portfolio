@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/73ec92280f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"
+        ><h2 class="logo"><span id="m">MA</span>DHUR</h2></a
+      >
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link" id="focus">Home</a></li>
+          <li><a href="#hobbies" class="nav-link" id="focus">Hobbies</a></li>
+          <li>
+            <a href="#skills" class="nav-link nav-spe" id="focus">Skills</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="mob-nav">
+        <i class="fas fa-bars" class="icon-mob-nav"></i>
+        <i class="fas fa-times" class="icon-mob-nav"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero" id="home">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary"><span id="text"></span></h1>
+            <p class="hero-description">
+              My name is
+              <span id="m">SHUTIKSHAN MADHUR </span> I am a second year student
+              and currently working on web development skills .This is my
+              portfolio describing about my hobbies and skills.
+            </p>
+            <a href="#hobbies" class="btn btn-full" id="focus">Hobbies</a>
+            <a href="#skills" class="btn btn-outline" id="focus"
+              >Skills &darr;</a
+            >
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="/img/Untitled design (6).png"
+              alt="my-img"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="hobbies" id="hobbies">
+        <div class="hobbies-inner">
+          <div class="secondary-heading">
+            <h1 class="sec-inner-heading"><span id="m">My</span> Hobbies</h1>
+          </div>
+          <div class="cards">
+            <div class="card-container">
+              <div class="card">
+                <div class="icons">
+                  <a href="" class="icon-links"
+                    ><i class="fas fa-laptop-code"></i
+                  ></a>
+                </div>
+                <h2>Code</h2>
+              </div>
+              <div class="card">
+                <div class="icons">
+                  <a href="" class="icon-links"
+                    ><i class="fas fa-book-reader"></i
+                  ></a>
+                </div>
+                <h2>Reading</h2>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="icons">
+                  <a href="" class="icon-links"
+                    ><i class="fas fa-hamburger"></i
+                  ></a>
+                </div>
+                <h2>Eating</h2>
+              </div>
+              <div class="card">
+                <div class="icons">
+                  <a href="" class="icon-links"><i class="fas fa-music"></i></a>
+                </div>
+                <h2>Music</h2>
+              </div>
+            </div>
+          </div>
+          <a href="" class="btn btn-hobby btn-skills">Read more &rarr;</a>
+        </div>
+      </section>
+      <!-- skill section -->
+      <section class="skills" id="skills">
+        <div class="skill">
+          <div class="heading">
+            <div class="head-title">
+              <h2><span id="m">My</span> Skills</h2>
+            </div>
+            <div class="about-skill">
+              <p>
+                My portfolio is representation of all that skills I have learned
+                and accomplished as a science and engineering student , some of
+                them are here.
+              </p>
+              <div class="contain-btn">
+                <a href="" class="btn btn-skills">Read more &rarr; </a>
+              </div>
+            </div>
+          </div>
+          <div class="progress-section">
+            <div class="left-progress">
+              <div class="title">
+                <h2>HTML</h2>
+                <div class="progress">
+                  <div class="bar" data-done="70">70%</div>
+                </div>
+              </div>
+              <div class="title">
+                <h2>CSS</h2>
+                <div class="progress">
+                  <div class="bar" data-done="60">60%</div>
+                </div>
+              </div>
+              <div class="title">
+                <h2>Javascript</h2>
+                <div class="progress">
+                  <div class="bar" data-done="40">40%</div>
+                </div>
+              </div>
+
+              <div class="title">
+                <h2>Node js</h2>
+                <div class="progress">
+                  <div class="bar" data-done="30">30%</div>
+                </div>
+              </div>
+              <div class="title">
+                <h2>cpp</h2>
+                <div class="progress">
+                  <div class="bar" data-done="60">60%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer-border">
+            Copyright &copy; 2022 by MADHUR, All rights reserved.
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
