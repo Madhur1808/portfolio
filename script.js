@@ -22,6 +22,13 @@ btnNav.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
 });
 
+const navlinks = document.querySelectorAll(".nav-link");
+navlinks.forEach((navlink) => {
+  navlink.addEventListener("click", () => {
+    headerEl.classList.toggle("nav-open");
+  });
+});
+
 //progress//
 
 window.onscroll = function (ev) {
